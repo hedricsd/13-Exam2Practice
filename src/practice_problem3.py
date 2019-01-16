@@ -827,3 +827,16 @@ except Exception:
     time.sleep(1)
     raise
 
+p1 = rg.Point(4, 5)
+p2 = rg.Point(p1.x, p1.y)
+p3 = p1
+p4 = p2
+
+p3.x = 99
+p4.y = 600
+p4 = rg.Point(42, 42)
+
+print(p1)
+print(p2)
+print(p3)
+print(p4)
